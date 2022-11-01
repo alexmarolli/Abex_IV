@@ -25,16 +25,16 @@
                     <a href=""><li>Modo de Jogo</li></a>
                     <a href=""><li>Rank atual</li></a>
                 </ul>
-                <div>
+                <div class="inf-adicionais">
                     <a href="">Seja um Moderador</a>
                 </div>
             </div>
         </nav>
         <div class="itens">
-            <a href=""><img src="" alt="Ajuda"></a>
+            <a href=""><img src="assets/question-mark-sign-icon.png" alt="Ajuda"></a>
             <p><a href="">Rank</a></p>
             <div class="itens-usuario">
-                <a href=""><img src="" alt="Foto perfil pequena"></a>
+                <a href=""><img src="https://avatars.githubusercontent.com/u/84483648?s=40&v=4" alt="Foto perfil pequena"></a>
                 <p>NickName</p>
             </div>
         </div>
@@ -42,6 +42,17 @@
     <main>
         
     </main>
- 
+    <script>
+        var menu=document.querySelector(".menu")
+        var sidebar=document.querySelector(".sidebar")
+
+        menu.onclick=e=>{
+            if(!sidebar.classList.contains('oculto')){
+                sidebar.classList.add('oculto');
+            }else {
+                sidebar.classList.remove('oculto'); 
+            }
+        }
+    </script>
 </body>
 </html>
