@@ -12,7 +12,8 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     overflow-y: hidden;
-    box-sizing: border-box;
+    height: 100%;
+    border: solid 5px green;
 }
 
 a{
@@ -43,14 +44,15 @@ header{
 }
 .menu{
     cursor: pointer;
-    margin: 15px 20px;
+    margin: 0px 15px;
+    padding: 5px;
 }
 
 .menu div{
     width: 25px;
     height: 2px;
     background-color: #FFFFFF;
-    margin: 8px;
+    margin: 7px;
     transition: 0.5s;
 }
 .sidebar{
