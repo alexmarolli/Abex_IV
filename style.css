@@ -12,8 +12,7 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     overflow-y: hidden;
-    height: 100%;
-    border: solid 5px green;
+    height: 100vh;
 }
 
 a{
@@ -32,6 +31,7 @@ header{
     right: 0%;
     justify-content: space-between;
     background-color: #24324C;
+    box-shadow:5px 3px 4px #28282A;
 }
 
 .itens{
@@ -108,10 +108,11 @@ header{
 
 .itens-usuario{
     align-items: center;
+    margin-right: 15px;
 }
 
-.itens p{
-    margin: 15px 20px;
+.itens a{
+    margin: 5px 10px;
 }
 
 
@@ -131,3 +132,14 @@ header{
     border-radius: 50%;
 }
 
+main{
+    display: flex;
+}
+
+.tela-game{
+    width: 900px;
+    height: 500px;
+    margin: 90px 50px;
+    margin-left: 100px;
+    border: solid 1px red;
+}

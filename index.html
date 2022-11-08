@@ -44,7 +44,7 @@
         <div class="tela-game">
             Em DESENVOLVIMETO
         </div>
-        <section>
+        <section class="menu-busca">
             <div>
                 <div>
                     <input type="text" value='Pesquisa' name="pesquisa" id="">
@@ -53,18 +53,5 @@
             </div>
         </section>
     </main>
-    
-    <script>
-        var menu=document.querySelector(".menu")
-        var sidebar=document.querySelector(".sidebar")
-
-        menu.onclick=e=>{
-            if(!sidebar.classList.contains('oculto')){
-                sidebar.classList.add('oculto');
-            }else {
-                sidebar.classList.remove('oculto'); 
-            }
-        }
-    </script>
 </body>
 </html>
