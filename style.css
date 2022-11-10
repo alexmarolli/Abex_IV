@@ -55,6 +55,10 @@ header{
     margin: 7px;
     transition: 0.5s;
 }
+
+.showSidebar .menu{
+    left: 0%;
+}
 .sidebar{
     position: absolute;
     width: 25%;
