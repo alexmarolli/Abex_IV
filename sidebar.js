@@ -1,3 +1,3 @@
 document.querySelector(".menu").addEventListener("click",() =>
-    document.querySelector(".container").classList.toggle("showSidebar"),
+    document.querySelector("header").classList.toggle("showSidebar"),
 );

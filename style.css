@@ -24,13 +24,13 @@ a{
 header{
     display: flex;
     height: 8vh;
-    right: 0%;
-    justify-content: space-between;
+    right: 15px;
     background-color: #24324C;
     box-shadow:5px 3px 4px #28282A;
 }
 
 .itens{
+    right: 10px;
     display: flex;
     margin: 10px;
 }
@@ -38,10 +38,28 @@ header{
     display: flex;
     margin-left: 10px;
 }
+
+.sidebar{
+    top: 8vh;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color:#28282A;
+    left: -25%;
+    transition: 0.7s;
+}
+
+.showSidebar .sidebar{
+    left: 0;
+}
+
 .menu{
+    display: flex;
+    flex-direction: column;
     position: fixed;
     cursor: pointer;
-    margin: 0px 15px;
+    top: 10px;
+    left: 10px;
     padding: 5px;
 }
 
@@ -49,21 +67,8 @@ header{
     width: 25px;
     height: 2px;
     background-color: #FFFFFF;
-    margin: 7px;
+    margin: 3px;
     transition: 0.5s;
-}
-
-
-.sidebar{
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color:#28282A;
-    left: -25%;
-}
-
-.showSidebar .sidebar{
-    left: 0;
 }
 
 .nav-list a img{
