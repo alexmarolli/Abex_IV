@@ -1,0 +1,50 @@
+create table usuario (
+    id_us integer not null ,
+    nick varchar(20)not null,
+    idade date,
+    email varchar(100) not null,
+    pontos integer,
+    primary key (id_us)
+);
+create table perguntas(
+    id_perg integer not null ,
+    descricao text,
+    primary key (id_perg)
+);
+create table respostas(
+    id_resp integer not null ,
+    reposta text,
+    tipo boolean,
+    primary key (id_resp)
+);
+
+create table game(
+    id_game integer not null ,
+    pergunta integer,
+    respost integer,
+    nome varchar(25),
+    pontos integer,
+    primary key (id_game),
+    foreign key (pergunta) references perguntas(id_perg),
+    foreign key (respost) references respostas(id_resp)
+);
+alter table game drop column if exists pontos;
+alter table respostas add column pontos integer;
+alter table game drop column if exists total;
+create table resolve(
+    id_game integer,
+    data double precision,
+    id_usuario integer,
+    pontuacao integer,
+    foreign key (id_game) references game(id_game),
+    foreign key (id_usuario) references usuario(id_us)
+);
+alter table perguntas add column id_resp integer;
+alter table perguntas  add foreign key (id_resp) references respostas(id_resp);
+alter table perguntas drop if exists id_resp;
+alter table respostas add column id_pergun integer;
+alter table respostas add foreign key (id_pergun) references perguntas(id_perg);
+alter table game add column total_point integer;
+
+select * from game;
+
