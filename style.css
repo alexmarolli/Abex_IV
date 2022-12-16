@@ -155,8 +155,11 @@ main{
     height: 60vh;
     margin: 10vh 50px;
     margin-left: 100px;
-    border: solid 1px red;
+    border-radius: 20px;
+    background-color: rgba(86, 86,86 , 0.25);
+    text-align: center;
 }
+
 
 .menu-busca{
     width: 20%;
